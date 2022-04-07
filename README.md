@@ -1,7 +1,23 @@
 # LeViT with FFCV
-In this project, we implement and experiment the combination LeViT - Vision Transformer for fast inference with 
-FFCV - Fast Forward Computer Vision  drop-in data loading system, which results a faster LeViT, in both training and inference, 
+In this project, we implement and experiment the combination of LeViT - Vision Transformer for fast inference, with 
+FFCV - Fast Forward Computer Vision  drop-in data loading system, which results in a faster training and inference, 
 and reaches better accuracies with smaller scale architectures. <br>
+
+## References
+### LeViT
+Paper: <br>
+https://arxiv.org/pdf/2104.01136.pdf <br>
+GitHub: <br>
+https://github.com/facebookresearch/LeViT <br>
+### FFCV
+Main website: <br>
+https://ffcv.io/ <br>
+GitHub: <br>
+https://github.com/facebookresearch/LeViT <br>
+FFCV implementation with ResNet: <br>
+https://github.com/libffcv/ffcv-imagenet <br>
+
+
 ## Installation
 First, clone the repository to your machine.
 ```
@@ -22,7 +38,7 @@ run:
 ```
 srun --gres=gpu:1 python3 speed_test.py --ffcv-data-source-dir <source dir for FFCV file creation>
 ```
-**NOTE** FFCV .dat file is required to perform speed tests or training.
+**NOTE:** FFCV .dat file is required to perform speed tests or training.
 
 ### FFCV Data Creation
 In order to use FFCV loading functinality, we need to write an FFCV .dat file that will be used as the data source.
