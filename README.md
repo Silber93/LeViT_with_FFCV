@@ -47,9 +47,8 @@ srun --gres=gpu:1 python3 speed_test.py --ffcv-data-source-dir <source dir for F
 |  LeViT-192 |                      27.09 |               7388.3 |                           24.76 |                   8428.96 |
 |  LeViT-256 |                      25.05 |               5525.8 |                           30.66 |                   6274.54 |
 |  LeViT-384 |                      33.78 |               3331.7 |                           28.42 |                   3780.06 |
-
 <br>
-**NOTE:** FFCV .dat file is required to perform speed tests or training.
+NOTE: FFCV .dat file is required to perform speed tests or training. <br>
 
 ### FFCV Data Creation
 In order to use FFCV loading functinality, we need to write an FFCV .dat file that will be used as the data source.
