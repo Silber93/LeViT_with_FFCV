@@ -62,6 +62,8 @@ srun --gres=gpu:1 python3 ffcv_writer.py --data-dir <data source dir> --split <t
 srun --gres=gpu:1 python3 main.py --output_dir saved_models/s_396 --data-path ~/data/imagenette2 --model LeViT_128S --eval-freq 2
 ```
 * Select the model to train with the argument '--model' 
-* Choose whether to use FFCV data loading with the argument '--ffcv-load' <[Y/N]> ('Y' by default)
+* Choose whether to use FFCV data loading with the argument '--ffcv-load' <[Y/N]> ('Y' by default) <br>
+<br>
+We can see that when using FFCV data loading, training time is much shorter for all models and eventually validation accuracy will be greater on smaller scale architectures, such as LeViT-128S: <br>
 
-
+![alt text](https://github.com/Silber93/LeViT_with_FFCV/blob/master/misc/train_speed.jpeg?raw=true) <br>
